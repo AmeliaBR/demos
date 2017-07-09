@@ -218,13 +218,12 @@ body {
 		<use xlink:href="#warning"></use>
 	</svg>
 </a>
-<pre><code>&lt;a href=&quot;javascript:alert('Warning: you must rock!');&quot;&gt;
-	&lt;svg role=&quot;img&quot; aria-labelledby=&quot;title-3&quot; focusable=&quot;false&quot; width=&quot;40&quot; height=&quot;40&quot;&gt;
-		&lt;title id=&quot;title-3&quot;&gt;Warning&lt;/title&gt;
-		&lt;use xlink:href=&quot;#warning&quot;&gt;&lt;/use&gt;
+<pre><code>&lt;a href="javascript:alert('Warning: you must rock!');"&gt;
+	&lt;svg focusable="false" width="40" height="40"&gt;
+		&lt;title&gt;Warning&lt;/title&gt;
+		&lt;use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#warning"&gt;&lt;/use&gt;
 	&lt;/svg&gt;
-&lt;/a&gt;
-</code></pre>
+&lt;/a&gt;</code></pre>
 <p>Test results:</p>
 <ul>
 	<li>NVDA: buggy (outputs title but other unintended text)</li>
@@ -242,10 +241,10 @@ body {
 		<use xlink:href="#warning"></use>
 	</svg>
 </a>
-<pre><code>&lt;a href=&quot;javascript:alert('Warning: you must rock!');&quot;&gt;
-	&lt;svg role=&quot;img&quot; aria-labelledby=&quot;title-3&quot; focusable=&quot;false&quot; width=&quot;40&quot; height=&quot;40&quot;&gt;
-		&lt;title id=&quot;title-3&quot;&gt;Warning&lt;/title&gt;
-		&lt;use xlink:href=&quot;#warning&quot;&gt;&lt;/use&gt;
+<pre><code>&lt;a href="javascript:alert('Warning: you must rock!');"&gt;
+	&lt;svg role="img" aria-labelledby="title-3" focusable="false" width="40" height="40"&gt;
+		&lt;title id="title-3"&gt;Warning&lt;/title&gt;
+		&lt;use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#warning"&gt;&lt;/use&gt;
 	&lt;/svg&gt;
 &lt;/a&gt;
 </code></pre>
@@ -266,10 +265,10 @@ body {
 		<use xlink:href="#warning"></use>
 	</svg>
 </a>
-<pre><code>&lt;a href=&quot;javascript:alert('Warning: you must roll!');&quot; aria-label=&quot;show warning&quot;&gt;
-	&lt;svg role=&quot;img&quot; aria-labelledby=&quot;title-4&quot; focusable=&quot;false&quot; width=&quot;40&quot; height=&quot;40&quot;&gt;
-		&lt;title id=&quot;title-4&quot;&gt;Warning&lt;/title&gt;
-		&lt;use xlink:href=&quot;#warning&quot;&gt;&lt;/use&gt;
+<pre><code>&lt;a href="javascript:alert('Warning: you must roll!');" aria-label="show warning"&gt;
+	&lt;svg role="img" aria-labelledby="title-4" focusable="false" width="40" height="40"&gt;
+		&lt;title id="title-4"&gt;Warning&lt;/title&gt;
+		&lt;use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#warning"&gt;&lt;/use&gt;
 	&lt;/svg&gt;
 &lt;/a&gt;
 </code></pre>
